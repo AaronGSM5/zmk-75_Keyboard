@@ -9,11 +9,11 @@
         default_layer {
             bindings = <
                 &kp ESC   &kp F1   &kp F2   &kp F3    &kp F4    &kp F5   &kp F6 &kp F7    &kp F8    &kp F9   &kp F10   &kp F11    &kp F12   &kp INS       &kp DEL   &kp HOME
-                &kp CARET &kp N1   &kp N2   &kp N3    &kp N4    &kp N5   &kp N6 &kp N7    &kp N8    &kp N9   &kp N0    &kp QMARK  &kp GRAVE &kp BACKSPACE &kp PG_UG &none
-                &kp TAB   &kp Q    &kp W    &kp E     &kp R     &kp T    &kp Z  &kp U     &kp I     &kp O    &kp P     &none      &kp PLUS  &kp ENTER     &kp PG_DN &none
-                &kp CAPS  &kp A    &kp S    &kp D     &kp F     &kp G    &kp H  &kp J     &kp K     &kp L    &none     &none      &kp HASH  &kp END       &none     &none
-                &kp SHIFT &kp Y    &kp X    &kp C     &kp V     &kp B    &kp N  &kp M     &kp COMMA &kp DOT  &kp MINUS &kp RSHIFT &kp UP    &kp PSCRN     &none     &none
-                &kp LCTRL &kp LGUI &kp LALT &kp SPACE &kp SPACE &kp RALT &none  &kp RCTRL &kp LEFT  &kp DOWN &kp RIGHT &none      &none     &none         &none     &none    
+                &kp CARET &kp N1   &kp N2   &kp N3    &kp N4    &kp N5   &kp N6 &kp N7    &kp N8    &kp N9   &kp N0    &kp QMARK  &kp GRAVE &kp BACKSPACE &kp PG_UG &trans
+                &kp TAB   &kp Q    &kp W    &kp E     &kp R     &kp T    &kp Z  &kp U     &kp I     &kp O    &kp P     &kp A      &kp PLUS  &kp ENTER     &kp PG_DN &trans
+                &kp CAPS  &kp A    &kp S    &kp D     &kp F     &kp G    &kp H  &kp J     &kp K     &kp L    &kp A     &kp A      &kp HASH  &kp END       &trans     &trans
+                &kp SHIFT &kp Y    &kp X    &kp C     &kp V     &kp B    &kp N  &kp M     &kp COMMA &kp DOT  &kp MINUS &kp RSHIFT &kp UP    &kp PSCRN     &trans     &trans
+                &kp LCTRL &kp LGUI &kp LALT &kp SPACE &kp SPACE &kp RALT &kp A  &kp RCTRL &kp LEFT  &kp DOWN &kp RIGHT &trans      &trans     &trans         &trans     &trans    
             >;
         };
     };
