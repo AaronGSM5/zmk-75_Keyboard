@@ -1,12 +1,11 @@
 file_format: "1"
 id: flexyboard
-name: Flexyboard
+name: flexyboard
 type: shield
 url: https://github.com/AaronGSM5/zmk-flexyboard-shield.git
 requires: [pro_micro]
 features:
   - keys
-  - encoder
 siblings:
   - flexyboard_left
   - flexyboard_right
