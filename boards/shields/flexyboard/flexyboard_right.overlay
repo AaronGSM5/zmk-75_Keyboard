@@ -8,7 +8,6 @@
     /* This kscan is for the 75% left half */
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        wakeup-source;
 
         diode-direction = "col2row";
 
