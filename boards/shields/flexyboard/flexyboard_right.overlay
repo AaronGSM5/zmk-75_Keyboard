@@ -1,9 +1,5 @@
 #include "flexyboard.dtsi"
 
-&default_transform {
-    col-offset = <7>;
-};
-
 / {
     /* This kscan is for the 75% left half */
     kscan0: kscan {
