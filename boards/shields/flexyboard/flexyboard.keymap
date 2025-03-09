@@ -5,9 +5,12 @@
 
 / {
     behaviors {
-      &out OUT_BLE
+        out_ble: out_ble {
+            compatible = "zmk,behavior-out";
+            label = "OUT_BLE";
+        };
     };
-    
+
     keymap {
         compatible = "zmk,keymap";
 
