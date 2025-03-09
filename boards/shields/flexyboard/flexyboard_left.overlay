@@ -1,13 +1,5 @@
 #include "flexyboard.dtsi"
 
-&bluetooth {
-  status = "okay";
-};
-
-&zephyr_udc {
-  status = "okay";
-};
-
 / {
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
