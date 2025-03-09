@@ -6,11 +6,17 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_SLEEP
+    default n
+
 endif
 
 if SHIELD_FLEXYBOARD_LEFT || SHIELD_FLEXYBOARD_RIGHT
 
 config ZMK_SPLIT
     default y
+
+config ZMK_SLEEP
+    default n
 
 endif
