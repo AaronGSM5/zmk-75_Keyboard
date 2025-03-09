@@ -4,13 +4,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    behaviors {
-        out_ble: out_ble {
-            compatible = "zmk,behavior-out";
-            label = "OUT_BLE";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
