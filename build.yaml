@@ -24,3 +24,32 @@ include:
     shield: flexyboard_left
   - board: nice_nano_v2
     shield: flexyboard_right
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Zephyr environment
+        run: |
+          west init -l app
+          west update
+          west zephyr-export
+          pip install -r zephyr/scripts/requirements.txt
+
+      - name: Build firmware
+        run: |
+          west build -b nice_nano_v2 -- -DSHIELD=flexyboard_left
+          west build -b nice_nano_v2 -- -DSHIELD=flexyboard_right
+
+      - name: Check Zephyr Config
+        run: cat build/zephyr/.config | grep CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC || echo "Flag not set"
+
+      - name: Upload Config Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: zephyr-config
+          path: build/zephyr/.config
+
+
